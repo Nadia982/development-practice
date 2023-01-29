@@ -1,0 +1,25 @@
+{
+  "name": "development-practice",
+  "version": "1.0.0",
+  "description": "Development practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --es-module-specifier-resolution=node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nadia982/development-practice.git"
+  },
+  "keywords": [
+    "npm",
+    "development",
+    "practice"
+  ],
+  "author": "Natalie Gillam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nadia982/development-practice/issues"
+  },
+  "homepage": "https://github.com/Nadia982/development-practice#readme"
+}
