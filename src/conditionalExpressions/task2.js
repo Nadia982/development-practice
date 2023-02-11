@@ -9,12 +9,16 @@
 // Else - print to the console: {{Variable type is: }} and append variable type.
 
 const a = true;
-if (typeof a === "boolean") {
-  console.log("Variable is boolean: " + a);
-} else if (typeof a === "number") {
-  console.log("Variable is number: " + a);
-} else if (typeof a === "string") {
-  console.log("Variable is string: " + a);
-} else {
-  console.log("Variable type is " + typeof a);
+switch (typeof a) {
+  case "boolean":
+    console.log("Variable is boolean: " + a);
+    break;
+  case "number":
+    console.log("Variable is number: " + a);
+    break;
+  case "string":
+    console.log("Variable is string: " + a);
+    break;
+  default:
+    console.log("Variable type is " + typeof a);
 }
