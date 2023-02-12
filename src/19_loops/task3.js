@@ -5,7 +5,7 @@
 const course = "Fundamentals";
 let countOfLetterA = 0;
 for (let i = 0; i < course.length; i++) {
-  if (course[i] == "a") {
+  if (course[i].toLowerCase() == "a") {
     countOfLetterA++;
   }
 }
