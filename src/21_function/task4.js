@@ -9,8 +9,6 @@ const binaryFn = function (a, b) {
 // but c is a reference to the binary function. Function fn calls binary function c passing parameters a, b
 // 4. Call function fn passing numbers 3, 8 and third parameter - previously created binaryFn function. Expected result is 24
 
-c = binaryFn;
-
 const fn = function (a, b, c) {
   return c(a, b);
 };
