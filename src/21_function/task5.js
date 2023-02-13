@@ -8,7 +8,7 @@ function fn(a) {
   let fnResult = function () {
     return a;
   };
-  return fnResult();
+  return fnResult;
 }
 
 console.log(fn(6));
