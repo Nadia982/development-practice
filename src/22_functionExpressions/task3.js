@@ -1,10 +1,7 @@
 //     1. Create an arrow based function and assign it to the constant fn
 //     2. Function fn returns a function which returns a string value: 'devMentor short function'
 
-const fn = () => {
-  innerFunction = () => "devMentor short function";
-  return innerFunction;
-};
+const fn = () => () => "devMentor short function";
 
 console.log(fn());
 
