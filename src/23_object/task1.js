@@ -9,18 +9,22 @@
 // 4. E.g. if we call that function with a human object, which has fields (Rutenis, Turcinas, 33, false),
 // the console will have printed line: Rutenis Turcinas (30) is not a developer
 
-const human = {};
-human.firstName = "Bertie";
-human.lastName = "Denning";
-human.age = 27;
-human.isDeveloper = false;
+const human = {
+  firstName: "Bertie",
+  lastName: "Denning",
+  age: 28,
+  isDeveloper: false,
+};
 
-const printHuman = (obj) => {
-  let values = Object.values(obj);
-  if (values[3] === true) {
-    console.log(`${values[0]} ${values[1]} (${values[2]}) is a developer`);
+const printHuman = (human) => {
+  if (human.isDeveloper === true) {
+    console.log(
+      `${human.firstName} ${human.lastName} (${human.age}) is a developer`
+    );
   } else {
-    console.log(`${values[0]} ${values[1]} (${values[2]}) is not a developer`);
+    console.log(
+      `${human.firstName} ${human.lastName} (${human.age}) is not a developer`
+    );
   }
 };
 
