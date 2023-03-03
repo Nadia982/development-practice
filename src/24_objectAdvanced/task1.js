@@ -10,7 +10,7 @@ const person = {
 };
 
 const isObject = (val) => {
-  if (val === "null") {
+  if (!val) {
     return false;
   }
   return typeof val === "object";
